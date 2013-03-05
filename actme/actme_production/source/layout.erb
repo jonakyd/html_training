@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Actme</title>
+    <%= stylesheet_link_tag "main" %>
+  </head>
+  <body class="<%= page_classes %>">
+    <div id="wrapper">
+      <%= partial "header" %>
+      <%= yield %> 
+      <%= partial "footer" %>
+    </div>
+  </body>
+</html>

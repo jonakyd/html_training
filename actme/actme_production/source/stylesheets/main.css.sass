@@ -1,0 +1,257 @@
+@import "compass/reset"
+@import "compass/utilities/general/float"
+@import "compass/css3/inline-block"
+@import "compass/css3/opacity"
+@import "compass/css3/box-sizing"
+
+$header-height: 46px
+$content-width: 980px
+
+// general CSS class
+*
+  @include box-sizing(border-box)
+.clear
+  clear: both
+// end general CSS class
+
+// header
+#header
+  position: relative
+  height: $header-height 
+  .background
+    position: absolute
+    width: 100%
+    height: 100%
+    .logo-background
+      +float-left
+      background: url("/images/header-left-bg.png") repeat-x
+      height: 100%
+      width: 50%
+    .navigator-background
+      +float-right
+      background: url("/images/header-right-bg.png") repeat-x
+      height: 100%
+      width: 50%
+  .foreground
+    position: absolute
+    width: 100%
+    height: 100%
+    .inner-wrapper
+      margin: 0 auto
+      background: url("/images/header-center-bg.png") no-repeat
+      height: 100%
+      width: $content-width 
+      .logo
+        +float-left
+        width: 20%
+      .navigator
+        +float-left
+        width: 55%
+        .list-item
+          +inline-block
+          line-height: $header-height
+          padding: 0 10px
+          font-family: "Gill Sans"
+          a
+            color: #484b4a
+            text-decoration: none
+          a:hover
+            color: #e4e4d3
+          a.selected
+            color: #e4e4d3
+      .search
+        +float-left
+        width: 25%
+        height: 21px 
+        padding: 10px 0
+        .search-wrapper
+          padding: 3px 0
+          background: url("/images/bg-search.png") no-repeat
+        .search-box
+          position: relative 
+          outline: none
+          left: 23px
+          width: 150px 
+          line-height: 21px
+          border: 0
+          margin: 0
+// end header
+
+// content
+#content
+  padding: 10px 0
+  margin: 0 0 10px 0
+  background: #f6f6f5 url("/images/bg-body.png")
+  .inner-wrapper
+    width: $content-width
+    margin: 0 auto
+
+#content-highlight
+  position: relative
+  width: $content-width 
+  height: 500px
+  .image
+    width: 100%
+  .title-wrapper
+    box-sizing: border-box 
+    position: absolute
+    color: white
+    background: black
+    +opacity(0.5)
+    padding: 5px 15px
+    line-height: 30px
+    top: 20px
+    font-family: "Gill Sans"
+  .slogan-wrapper
+    box-sizing: border-box 
+    position: absolute
+    padding: 5px 15px
+    +opacity(0.5)
+    font-family: "Gill Sans"
+    background: white
+    line-height: 30px
+    top: 60px
+
+#content-personal
+  +float-left
+  width: $content-width/2
+  height: 240px
+  padding: 5px
+  .title
+    +float-left
+    width: 15px
+    height: 100%
+    text-indent: 2em
+    overflow: hidden
+    background: url("/images/personal.png") no-repeat
+  .wrapper
+    +float-right
+    width: $content-width/2 - 25px
+    height: 100%
+    .images
+      +float-left
+      height: 100%
+      width: 50%
+    .info
+      +float-right
+      background: white
+      width: 50%
+      height: 100%
+      .quote
+        height: 77px
+        padding: 5px 10px
+        .img
+          +inline-block
+          background: url("/images/entry-quote.png") no-repeat
+          width: 16px
+          height: 12px
+        .seperator
+          +inline-block
+          width: 2px
+          height: 100% 
+          background: #d2d6db
+        .desc
+          +inline-block
+          width: 180px
+    .shadow
+      width: 100% 
+      height: 10px
+      background: url("/images/personal-content-shadow.png") no-repeat 
+ 
+
+
+#content-tweets
+  +float-right
+  width: $content-width/2
+  height: 240px
+  padding: 5px
+  .title
+    +float-left
+    width: 15px
+    height: 100%
+    text-indent: 2em
+    overflow: hidden
+    background: url("/images/tweets.png") no-repeat
+  .wrapper
+    +float-right
+    width: $content-width/2 - 25px
+    height: 100%
+    .tweets
+      background: #ededea
+      height: 100%
+      padding: 15px
+      .tweet-wrapper
+        padding: 0 0 10px 0
+        .tweet
+          padding: 13px 5px
+          background: white
+    .shadow
+      width: 100% 
+      height: 10px
+      background: url("/images/personal-twitter-shadow.png") no-repeat 
+
+#content-blogs
+  width: 100%
+  padding: 5px
+  .title
+    +float-left
+    width: 15px
+    height: 200px 
+    text-indent: 2em
+    overflow: hidden
+    background: url("/images/blog.png") no-repeat
+  .blogs
+    +float-right
+    width: $content-width - 25px
+    .blog
+      +inline-block
+      width: 235px
+      height: 255px
+      margin: 0 0 30px 0 
+      .blog-image
+        width: 100%
+      .blog-title
+        color: #b71313
+        line-height: 1.5em
+        font-weight: bold
+        padding: 5px 
+      .blog-content
+        line-height: 1.2em
+        padding: 5px 
+        height: 90px
+      .wrapper
+        width: 100%
+        background: white
+      .shadow
+        width: 100% 
+        height: 10px
+        background: url("/images/post-personal-shadow.png") no-repeat 
+
+#content-navigator       
+  padding: 0 0 0 20px
+  .wrapper
+    height: 50px
+    background: white
+    padding: 10px
+    color: #515353
+    line-height: 30px
+    .pager
+      +float-left
+    .hint
+      +float-right
+// end content
+
+#footer
+  height: 50px
+  line-height: 50px
+  .wrapper
+    width: $content-width
+    margin: 0 auto
+  .list-item
+    +inline-block
+  .footer-sns
+    +float-left
+  .footer-navigator
+    +inline-block
+  .footer-copywrite
+    +float-right
