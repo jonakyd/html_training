@@ -1,29 +1,30 @@
 #content-tweets
   +float-right
-  width: $content-width/2
-  height: 240px
-  padding: 5px
-  .title
-    +float-left
-    width: 15px
+  width: ( $content-width / 2 ) - 10
+  height: 200px
+  padding: 0 0 0 10px
+
+.tweets-title
+  +float-left
+  +hide-text
+  background: url( "/images/tweets.png" ) no-repeat
+  width: 15px
+  height: 64px 
+
+.tweets-wrap
+  +float-left
+  width: ( $content-width / 2 ) - 25
+  height: 100%
+  .tweets
+    background: #ededea
     height: 100%
-    text-indent: 2em
-    overflow: hidden
-    background: url("/images/tweets.png") no-repeat
-  .wrapper
-    +float-right
-    width: $content-width/2 - 25px
-    height: 100%
-    .tweets
-      background: #ededea
-      height: 100%
-      padding: 15px
-      .tweet-wrapper
-        padding: 0 0 10px 0
-        .tweet
-          padding: 13px 5px
-          background: white
-    .shadow
-      width: 100% 
-      height: 10px
-      background: url("/images/personal-twitter-shadow.png") no-repeat 
+    padding: 15px
+    .tweet-wrap
+      padding: 0 0 10px 0
+      .tweet
+        padding: 13px 5px
+        background: #fff 
+  .tweets-shadow
+    width: 100% 
+    height: 10px
+    background: url( "/images/personal-twitter-shadow.png" ) no-repeat 
