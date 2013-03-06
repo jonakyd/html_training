@@ -1,83 +1,25 @@
+$header-height: 46px
+$content-width: 980px
+
 @import "compass/reset"
 @import "compass/utilities/general/float"
 @import "compass/css3/inline-block"
 @import "compass/css3/opacity"
 @import "compass/css3/box-sizing"
 
-$header-height: 46px
-$content-width: 980px
+@import "header"
+@import "footer"
 
 // general CSS class
 *
   @include box-sizing(border-box)
 .clear
   clear: both
+.hide-text
+  text-indent: 100%
+  overflow: hidden
 // end general CSS class
 
-// header
-#header
-  position: relative
-  height: $header-height 
-  .background
-    position: absolute
-    width: 100%
-    height: 100%
-    .logo-background
-      +float-left
-      background: url("/images/header-left-bg.png") repeat-x
-      height: 100%
-      width: 50%
-    .navigator-background
-      +float-right
-      background: url("/images/header-right-bg.png") repeat-x
-      height: 100%
-      width: 50%
-  .foreground
-    position: absolute
-    width: 100%
-    height: 100%
-    .inner-wrapper
-      margin: 0 auto
-      background: url("/images/header-center-bg.png") no-repeat
-      height: 100%
-      width: $content-width 
-      .logo
-        +float-left
-        width: 20%
-      .navigator
-        +float-left
-        width: 55%
-        .list-item
-          +inline-block
-          line-height: $header-height
-          padding: 0 10px
-          font-family: "Gill Sans"
-          a
-            color: #484b4a
-            text-decoration: none
-          a:hover
-            color: #e4e4d3
-          a.selected
-            color: #e4e4d3
-      .search
-        +float-left
-        width: 25%
-        height: 21px 
-        padding: 10px 0
-        .search-wrapper
-          padding: 3px 0
-          background: url("/images/bg-search.png") no-repeat
-        .search-box
-          position: relative 
-          outline: none
-          left: 23px
-          width: 150px 
-          line-height: 21px
-          border: 0
-          margin: 0
-// end header
-
-// content
 #content
   padding: 10px 0
   margin: 0 0 10px 0
@@ -239,19 +181,3 @@ $content-width: 980px
       +float-left
     .hint
       +float-right
-// end content
-
-#footer
-  height: 50px
-  line-height: 50px
-  .wrapper
-    width: $content-width
-    margin: 0 auto
-  .list-item
-    +inline-block
-  .footer-sns
-    +float-left
-  .footer-navigator
-    +inline-block
-  .footer-copywrite
-    +float-right
