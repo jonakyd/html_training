@@ -1,19 +1,13 @@
-$header-height: 46px
-$content-width: 980px
-
+@import "compass"
 @import "compass/reset"
-@import "compass/utilities/general/float"
-@import "compass/css3/inline-block"
-@import "compass/css3/opacity"
-@import "compass/css3/box-sizing"
 
-*
-  @include box-sizing(border-box)
-.clear
-  clear: both
-.hide-text
-  text-indent: 100%
-  overflow: hidden
+$content-width: 960px
+$header-height: 46px
+$font-family: "Gill Sans"
+
+#wrapper
+  width: 100%
+  min-width: $content-width
 
 @import "header"
 @import "footer"
