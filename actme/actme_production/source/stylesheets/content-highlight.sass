@@ -1,25 +1,56 @@
 #content-highlight
   position: relative
-  width: $content-width 
   height: 500px
-  .image
-    width: 100%
-  .title-wrapper
-    box-sizing: border-box 
-    position: absolute
-    color: white
-    background: black
-    +opacity(0.5)
-    padding: 5px 15px
-    line-height: 30px
-    top: 20px
-    font-family: "Gill Sans"
-  .slogan-wrapper
-    box-sizing: border-box 
-    position: absolute
-    padding: 5px 15px
-    +opacity(0.5)
-    font-family: "Gill Sans"
-    background: white
-    line-height: 30px
-    top: 60px
+  padding: 10px
+  background: #f6f6f5
+
+.highlight-title
+  position: absolute 
+  color: #fff 
+  background: #000 
+  +opacity(0.5)
+  padding: 10px 15px
+  line-height: 30px
+  top: 60px
+  font-family: $font-family 
+  font-size: 20px
+
+.highlight-slogan
+  position: absolute
+  padding: 5px 15px
+  +opacity(0.5)
+  font-family: $font-family 
+  background: #fff 
+  line-height: 30px
+  top: 110px
+
+.highlight-pager
+  position: absolute
+  bottom: 20px
+  left: 20px
+
+.highlight-pager-next
+  display: inline-block
+  width: 15px
+  height: 15px
+  background: url( "/images/arrow-next2.png" ) no-repeat
+
+.highlight-pager-prev
+  display: inline-block
+  width: 15px
+  height: 15px
+  background: url( "/images/arrow-prev2.png" ) no-repeat
+
+.highlight-slider
+  position: absolute
+  bottom: 25px
+  left: 60px
+  background: #f6f6f5 
+  width: 100px
+
+.highlight-pointer
+  position: relative 
+  left: 30px
+  background: #000 
+  width: 20px
+  height: 10px
