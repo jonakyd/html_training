@@ -1,0 +1,25 @@
+@import "content-highlight"
+@import "content-personal"
+@import "content-tweets"
+@import "content-blogs"
+
+#content
+  padding: 10px 0
+  margin: 0 0 10px 0
+  background: #f6f6f5 url("/images/bg-body.png")
+  .inner-wrapper
+    width: $content-width
+    margin: 0 auto
+
+#content-navigator       
+  padding: 0 0 0 20px
+  .wrapper
+    height: 50px
+    background: white
+    padding: 10px
+    color: #515353
+    line-height: 30px
+    .pager
+      +float-left
+    .hint
+      +float-right

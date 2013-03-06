@@ -1,0 +1,45 @@
+#content-personal
+  +float-left
+  width: $content-width/2
+  height: 240px
+  padding: 5px
+  .title
+    +float-left
+    width: 15px
+    height: 100%
+    text-indent: 2em
+    overflow: hidden
+    background: url("/images/personal.png") no-repeat
+  .wrapper
+    +float-right
+    width: $content-width/2 - 25px
+    height: 100%
+    .images
+      +float-left
+      height: 100%
+      width: 50%
+    .info
+      +float-right
+      background: white
+      width: 50%
+      height: 100%
+      .quote
+        height: 77px
+        padding: 5px 10px
+        .img
+          +inline-block
+          background: url("/images/entry-quote.png") no-repeat
+          width: 16px
+          height: 12px
+        .seperator
+          +inline-block
+          width: 2px
+          height: 100% 
+          background: #d2d6db
+        .desc
+          +inline-block
+          width: 180px
+    .shadow
+      width: 100% 
+      height: 10px
+      background: url("/images/personal-content-shadow.png") no-repeat 
