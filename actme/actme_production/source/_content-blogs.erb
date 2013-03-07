@@ -1,0 +1,23 @@
+<div id="content-blogs">
+  <div class="blogs-title">Blogs</div>
+  <div class="blogs">
+    <% for i in 0..10 %>
+    <div class="blog-wrap">
+      <div class="blog">
+        <img class="blog-image" src="/images/this-is-a-nice-post-for-our-cool-blog.jpeg" alt="">
+        <p class="blog-title"><%= lorem.words 5 %></p>
+        <p class="blog-content"><%= lorem.words 10 %></p>
+      </div>
+      <div class="blog-shadow"></div>
+    </div>
+    <% end %>
+    <div class="blog-nav-wrap">
+      <div class="blog-nav">
+        <div class="blog-nav-pager">1&nbsp;2&nbsp;>></div>
+        <div class="blog-nav-hint">Page 1 of 2</div>
+        <div class="clear"></div>
+      </div>
+      <div class="blog-nav-shadow"></div>
+    </div>
+  </div>
+</div>
