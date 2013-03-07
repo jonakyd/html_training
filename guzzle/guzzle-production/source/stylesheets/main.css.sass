@@ -1,0 +1,153 @@
+@import compass
+@import compass/reset
+
+$content-width: 940px
+
+a
+  text-decoration: none
+  color: #018acf
+
+@mixin content-body
+  width: $content-width
+  margin: 0 auto
+
+@mixin content-body-wrap
+  width: 100% 
+  min-width: $content-width 
+
+.header-wrap
+  +content-body-wrap
+  border-bottom: 1px solid #dadada 
+
+.header
+  +content-body
+  padding: 20px 0 0 0
+  +clearfix
+
+.header-logo
+  +float-left
+  +hide-text
+  width: 148px
+  height: 98px
+  background: url( "/images/logo.png" ) no-repeat
+
+.header-hint
+  +float-right
+  line-height: 98px
+  font-size: 12px
+
+.content-wrap
+  +content-body-wrap
+  background: #f3f3f3
+
+.content
+  +content-body
+
+.content-control
+  display: block
+  width: 159px
+  height: 26px
+  background: url( "/images/custom-page.png" ) no-repeat
+  padding: 0 0 20px 0
+
+.content-title
+  font-size: 52px
+  font-weight: bold
+  line-height: 1.3em
+
+.content-subtitle
+  font-size: 42px
+
+.content-desc
+  font-size: 22px
+  line-height: 3em
+
+.content-hint
+  text-align: right
+  font-size: 12px
+  line-height: 1.8em
+
+.content-divider
+  height: 8px
+  background: url( "/images/welcome-master.png" ) repeat-x
+
+.content-feeds
+  +clearfix
+  width: $content-width + 20px
+  padding: 10px 0 80px 0
+
+.feed
+  +float-left
+  padding: 0 20px 0 0
+  width: 33.33%
+  box-sizing: border-box // good place to demo box-sizing
+
+.feed-title
+  +clearfix
+  border-bottom: #dadada 2px solid
+  padding: 5px 0
+
+.feed-title-text
+  +float-left
+  font-weight: bold
+
+.feed-title-nav
+  +float-right
+  background: url( "/images/main-title-bg.png" ) no-repeat
+  width: 22px
+  height: 16px
+
+.feed-item
+  line-height: 1.5em
+  border-bottom: 1px solid #dadada 
+  font-size: 14px
+  word-spacing: 2px
+
+.feed-item-last
+  border-bottom: 0px
+
+.feed-images
+  +clearfix
+  padding: 5px 0
+  width: 103%
+
+.feed-image
+  +float-left
+  padding: 0 2.6% 2.6% 0
+
+.footer-wrap
+  +content-body-wrap
+  
+.footer
+  +content-body
+  +clearfix
+  padding: 20px 0
+
+.footer-items
+  +float-left
+  width: 33.33%
+  padding: 0 0 30px 0
+
+.footer-item-title
+  font-size: 24px
+  line-height: 1.7em 
+
+.footer-item-subtitle
+  line-height: 1.4em
+
+.footer-copyright
+  +float-left
+  font-size: 14px
+
+.footer-fb
+  +float-right
+  font-size: 14px
+
+.fb-image
+  position: relative 
+  left: -20px
+
+.fb-text
+  display: block
+  position: relative 
+  top: -16px

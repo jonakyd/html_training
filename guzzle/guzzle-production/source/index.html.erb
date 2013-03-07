@@ -1,10 +1,70 @@
----
-title: Welcome to Middleman
----
-
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div id="wrapper">
+  <div class="header-wrap">
+    <div class="header">
+      <a href="#" class="header-logo">
+        <h1>Guzzle</h1>
+      </a>
+      <div class="header-hint"><%= lorem.words 8 %></div>
+    </div>
+  </div>
+  <div class="content-wrap">
+    <div class="content">
+      <a href="" class="content-control"></a>
+      <h2 class="content-title">Wellcome.</h2>
+      <h3 class="content-subtitle"><%= lorem.words 15 %></h3>
+      <h4 class="content-desc"><%= lorem.words 10 %></h4>
+      <div class="content-hint">Don't show thsi message again</div>
+      <div class="content-divider"></div>
+      <div class="content-feeds">
+        <div class="feed">
+          <div class="feed-title">
+            <div class="feed-title-text">Headings</div>
+            <div class="feed-title-nav"></div>
+          </div>
+          <% for i in 0..6 %>
+          <div class="feed-item"><%= lorem.words 8 %></div>
+          <% end %>
+          <div class="feed-item feed-item-last"><%= lorem.words 8 %></div>
+        </div>
+        <div class="feed">
+          <div class="feed-title">
+            <div class="feed-title-text">Popular</div>
+            <div class="feed-title-nav"></div>
+          </div>
+          <% for i in 0..6 %>
+          <div class="feed-item"><%= lorem.words 8 %></div>
+          <% end %>
+          <div class="feed-item feed-item-last"><%= lorem.words 8 %></div>
+        </div>
+        <div class="feed">
+          <div class="feed-title">
+            <div class="feed-title-text">Lastest Images</div>
+            <div class="feed-title-nav"></div>
+          </div>
+          <div class="feed-images">
+            <% for i in 0..11 %>
+            <img src=<%= lorem.image('69x69') %> alt="" class="feed-image">
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-wrap">
+    <div class="footer">
+      <% for i in 0..2 %>
+      <div class="footer-items">
+        <div class="footer-item-title"><%= lorem.words 3 %></div>
+        <% for i in 0..3 %>
+        <div class="footer-item-subtitle"><%= lorem.words 2 %></div>
+        <% end %>
+      </div>
+      <% end %>
+      <div class="footer-copyright"><%= lorem.words 3 %> <a href="#">Copyright</a> <%= lorem.words 3 %></div>
+      <div class="footer-fb">
+        <img src="/images/facebook.gif" alt="" class="fb-image">
+        <a class="fb-text" href="#">Join us on Facebook</a>
+      </div>
+    </div>
+  </div>
+</div>
