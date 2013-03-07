@@ -1,14 +1,19 @@
 <div id="content-blogs">
   <div class="blogs-title">Blogs</div>
   <div class="blogs">
-    <% for i in 0..10 %>
-    <div class="blog-wrap">
-      <div class="blog">
-        <img class="blog-image" src="/images/this-is-a-nice-post-for-our-cool-blog.jpeg" alt="">
-        <p class="blog-title"><%= lorem.words 5 %></p>
-        <p class="blog-content"><%= lorem.words 10 %></p>
+    <% for i in 0..4 %>
+    <div class="blogs-row">
+      <% for i in 0..3 %>
+      <div class="blog-wrap">
+        <div class="blog">
+          <img class="blog-image" src="<%= lorem.image('210x130', :random_color => true) %>" alt="">
+          <p class="blog-title"><%= lorem.words 5 %></p>
+          <p class="blog-content"><%= lorem.words 10 %></p>
+        </div>
+        <div class="blog-shadow"></div>
       </div>
-      <div class="blog-shadow"></div>
+      <% end %>
+      <div class="clear"></div>
     </div>
     <% end %>
     <div class="blog-nav-wrap">
