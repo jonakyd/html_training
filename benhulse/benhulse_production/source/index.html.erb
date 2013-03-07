@@ -1,10 +1,35 @@
----
-title: Welcome to Middleman
----
-
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div id="wrapper">
+  <div id="header">
+    <a class="header-logo" href="/images/logo.jpg">Benhulse</a>
+    <div class="header-ribbon"></div>
+    <ol class="header-nav">
+      <li class="header-item">
+        <a href="" class="header-link">Design</a>
+      </li>
+      <li class="header-item">
+        <a href="" class="header-link">Photography</a>
+      </li>
+      <li class="header-item">
+        <a href="" class="header-link">Music</a>
+      </li>
+      <li class="header-item">
+        <a href="" class="header-link">About Ben Hulse</a>
+      </li>
+    </ol>
+  </div>
+  <div id="content">
+    <% for i in 0..3 %>
+    <div class="content-row">
+      <% for i in 0..3 %>
+      <div class="item-wrap">
+        <div class="item">
+          <img class="item-image" src=<%= lorem.image('200x134') %> alt="">
+          <div class="item-title"><%= lorem.words 3 %></div>
+          <div class="item-desc"><%= lorem.words 3 %></div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <% end %>
+  </div>
+</div>

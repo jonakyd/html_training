@@ -1,0 +1,53 @@
+@import compass
+@import compass/reset
+
+$content-width: 900px
+
+#wrapper
+  width: $content-width
+  margin: 0 auto
+
+.header-logo
+  +hide-text
+  display: block
+  width: 30px
+  height: 77px
+  background: url( "/images/logo.jpg" ) no-repeat
+
+.header-ribbon
+  height: 2px
+  background: #ccc
+
+.header-nav
+  +clearfix
+
+.header-item
+  +float-left
+  padding: 10px 15px 30px 0
+
+
+.header-link
+  color: black
+
+a.header-link:hover
+  text-decoration: none
+
+.content-row
+  +clearfix
+  width: $content-width + 20px
+
+.item-wrap
+  +float-left
+  width: 25%
+
+.item
+  padding: 0 20px 20px 0
+  text-align: center
+
+.item-image
+  width: 100%
+
+.item-title
+  font-weight: bold
+  line-height: 1.3em
+  word-spacing: 2px
