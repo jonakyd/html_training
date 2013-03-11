@@ -1,0 +1,131 @@
+@import compass
+@import compass/reset
+
+$content-width: 900px
+$left-right-edge: 20px
+
+@mixin content-body
+  width: $content-width
+  margin: 0 auto
+
+a
+  text-decoration: none
+
+.wrap
+  min-width: $content-width
+
+.header-wrap
+  background: #05124e
+
+.header
+  +content-body
+  +clearfix
+  padding: 5px 0
+
+.header-hint
+  +float-right
+  color: #00cae9
+  font-size: 12px
+  padding: 0 $left-right-edge 0 0
+
+.header-hint-more
+  color: #fff
+
+.content-wrap
+  background: #03266a url( "/images/header-bg-home.jpeg" ) top center no-repeat
+
+.content
+  +content-body
+
+.content-nav
+  position: relative
+  height: 150px
+
+.content-nav-logo
+  +hide-text
+  position: absolute
+  bottom: 0
+  left: 8px
+  width: 322px
+  height: 126px
+  background: url( "/images/logo.png" ) no-repeat
+
+.content-nav-list
+  position: absolute
+  bottom: 55px
+  right: 0
+  padding: 0 ($left-right-edge - 5 ) 0 0
+
+@mixin nav-item
+  +float-left
+  padding: 0 5px
+  text-align: center
+
+.nav-link
+  color: #fff
+  font-weight: bold
+  font-size: 18px
+  line-height: 33px
+
+.nav-what
+  +nav-item
+  width: 144px
+  height: 33px
+  background: url( "/images/nav-what.png" ) no-repeat center
+
+.nav-how
+  +nav-item
+  width: 152px
+  height: 33px
+  background: url( "/images/nav-how.png" ) no-repeat center
+
+.nav-sign
+  +nav-item
+  width: 102px
+  height: 33px
+  background: url( "/images/nav-sign.png" ) no-repeat center
+
+.content-highlight
+  position: relative
+  padding: 0 $left-right-edge
+
+.content-highlight-main
+  +clearfix
+  padding: 20px 30px
+
+.content-highlight-steps-wrap
+  position: absolute
+  width: 100%
+  height: 44px
+  background: #04093d
+
+.content-highlight-steps
+  // position: absolute
+  // top: -7px
+  // height: 58px
+
+.main-text
+  +clearfix
+  padding: 10px 10px
+
+.main-img
+  +float-right
+  width: 410px
+
+.main-text-title
+  color: #fff
+  font-size: 34px
+  line-height: 1.4em
+  font-weight: bold
+
+.main-text-explain
+  color: #95e3f9
+  font-size: 16px
+  line-height: 1.3em
+
+.main-text-more
+  color: #33bced
+  font-weight: bold
+
+.footer
+  +content-body

@@ -1,10 +1,69 @@
----
-title: Welcome to Middleman
----
-
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div class="wrap">
+  <div class="header-wrap">
+    <div class="header">
+      <p class="header-hint">
+        <%= lorem.words 3 %>
+        <a href="#" class="header-hint-more" title="auth">Sign in</a>
+        <%= lorem.words 3 %>
+      </p>
+    </div>
+  </div>
+  <div class="content-wrap">
+    <div class="content">
+      <div class="content-nav">
+        <a href="#" class="content-nav-logo" title="logo">
+          <h1>Icebrrg</h1>
+        </a>
+        <ol class="content-nav-list">
+          <li class="nav-what">
+            <a href="#" title="what" class="nav-link">What it Does</a>
+          </li>
+          <li class="nav-how">
+            <a href="#" title="how" class="nav-link">How to Use it</a>
+          </li>
+          <li class="nav-sign">
+            <a href="#" title="sign" class="nav-link">Sign-up</a>
+          </li>
+        </ol>
+      </div>
+      <div class="content-highlight">
+        <div class="content-highlight-main">
+          <img class="main-img" src=<%= lorem.image('410x270') %> alt="IcebrrgDescription">
+          <div class="main-text">
+            <h1 class="main-text-title"><%= lorem.words 5 %></h1>
+            <h2 class="main-text-explain"><%= lorem.words 30 %>
+              <a href="#" class="main-text-more" title="more"><%= lorem.words 4 %> >></a>
+            </h2>
+          </div>
+        </div>
+        <div class="content-highlight-steps-wrap">
+          <div class="content-highlight-steps">
+            <div class="step-design">Design your form</div>
+            <div class="step-website">Add to your website</div>
+            <div class="step-results">Get your results</div>
+          </div>
+        </div>
+      </div>
+      <div class="content-explain">
+        <div class="explain-item">
+          <p class="explain-title"><%= lorem.words 6 %></p>
+          <p class="explain-desc"><%= lorem.words 30 %>
+            <a href="#" title="show more" class="explain-more">See how >></a>
+          </p>
+          <a href="#" class="watch-demo" title="demo"><%= lorem.words 4 %></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-wrap">
+    <div class="footer">
+      <div class="footer-nav">
+        <% for i in 0..6 %>
+        <a href="#" class="footer-nav-link" title="link"><%= lorem.words 1 %></a>
+        <% end %>
+      </div>
+      <p class="footer-desc"><%= lorem.words 20 %></p>
+      <p class="footer-copyright"><%= lorem.words 10 %></p>
+    </div>
+  </div>
+</div>
