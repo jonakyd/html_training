@@ -1,25 +1,29 @@
 <div id="wrapper">
   <div class="header-wrap">
     <div class="header">
-      <a href="#" class="header-logo">
+      <a href="#" class="header-logo" title="logo">
         <h1>Guzzle</h1>
       </a>
-      <div class="header-hint"><%= lorem.words 8 %></div>
+      <div class="header-hint"><%= lorem.words 3 %>
+        <a href="#" title="login">Login</a>
+        <a href="#" title="createAccount">Create</a>
+      </div>
     </div>
   </div>
   <div class="content-wrap">
     <div class="content">
-      <a href="" class="content-control"></a>
-      <h2 class="content-title">Wellcome.</h2>
-      <h3 class="content-subtitle"><%= lorem.words 15 %></h3>
-      <h4 class="content-desc"><%= lorem.words 10 %></h4>
-      <div class="content-hint">Don't show thsi message again</div>
-      <div class="content-divider"></div>
+      <div class="content-highlight">
+        <a href="#" class="content-control" title="customizeControl">CustomizeMyPage</a>
+        <h2 class="content-title">Wellcome.</h2>
+        <h3 class="content-subtitle"><%= lorem.words 15 %></h3>
+        <h4 class="content-desc"><%= lorem.words 10 %></h4>
+        <div class="content-hint">Don't show thsi message again</div>
+      </div>
       <div class="content-feeds">
         <div class="feed">
           <div class="feed-title">
-            <div class="feed-title-text">Headings</div>
-            <div class="feed-title-nav"></div>
+            <h2 class="feed-title-text">Headings</h2>
+            <a href="#" title="feedNav" class="feed-title-nav"></a>
           </div>
           <% for i in 0..6 %>
           <div class="feed-item"><%= lorem.words 8 %></div>
@@ -28,8 +32,8 @@
         </div>
         <div class="feed">
           <div class="feed-title">
-            <div class="feed-title-text">Popular</div>
-            <div class="feed-title-nav"></div>
+            <h2 class="feed-title-text">Popular</h2>
+            <a href="#" title="feedNav" class="feed-title-nav"></a>
           </div>
           <% for i in 0..6 %>
           <div class="feed-item"><%= lorem.words 8 %></div>
@@ -38,12 +42,14 @@
         </div>
         <div class="feed">
           <div class="feed-title">
-            <div class="feed-title-text">Lastest Images</div>
-            <div class="feed-title-nav"></div>
+            <h2 class="feed-title-text">Lastest Images</h2>
+            <a href="#" title="feedNav" class="feed-title-nav"></a>
           </div>
           <div class="feed-images">
-            <% for i in 0..11 %>
-            <img src=<%= lorem.image('69x69') %> alt="" class="feed-image">
+            <% for i in 0..15 %>
+            <a href="#" class="feed-image-wrap" title="image">
+              <img src=<%= lorem.image('69x69') %> alt="" class="feed-image">
+            </a>
             <% end %>
           </div>
         </div>
@@ -60,11 +66,11 @@
         <% end %>
       </div>
       <% end %>
-      <div class="footer-copyright"><%= lorem.words 3 %> <a href="#">Copyright</a> <%= lorem.words 3 %></div>
-      <div class="footer-fb">
-        <img src="/images/facebook.gif" alt="" class="fb-image">
-        <a class="fb-text" href="#">Join us on Facebook</a>
+      <div class="footer-copyright"><%= lorem.words 3 %>
+        <a href="#">Copyright</a><%= lorem.words 3 %>
       </div>
+      <a href="#" title="facebook" class="footer-fb">Join us on Facebook
+      </a>
     </div>
   </div>
 </div>

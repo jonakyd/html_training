@@ -12,12 +12,12 @@ a
   margin: 0 auto
 
 @mixin content-body-wrap
-  width: 100% 
-  min-width: $content-width 
+  width: 100%
+  min-width: $content-width
 
 .header-wrap
   +content-body-wrap
-  border-bottom: 1px solid #dadada 
+  border-bottom: 1px solid #dadada
 
 .header
   +content-body
@@ -39,11 +39,13 @@ a
 .content-wrap
   +content-body-wrap
   background: #f3f3f3
+  border-bottom: 1px solid #dadada
 
 .content
   +content-body
 
 .content-control
+  +hide-text
   display: block
   width: 159px
   height: 26px
@@ -67,9 +69,9 @@ a
   font-size: 12px
   line-height: 1.8em
 
-.content-divider
-  height: 8px
-  background: url( "/images/welcome-master.png" ) repeat-x
+.content-highlight
+  padding: 0 0 10px 0
+  background: url( "/images/welcome-master.png" ) repeat-x bottom
 
 .content-feeds
   +clearfix
@@ -99,7 +101,7 @@ a
 
 .feed-item
   line-height: 1.5em
-  border-bottom: 1px solid #dadada 
+  border-bottom: 1px solid #dadada
   font-size: 14px
   word-spacing: 2px
 
@@ -111,13 +113,17 @@ a
   padding: 5px 0
   width: 103%
 
-.feed-image
+.feed-image-wrap
   +float-left
+  display: block
   padding: 0 2.6% 2.6% 0
+
+.feed-image
+  display: block
 
 .footer-wrap
   +content-body-wrap
-  
+
 .footer
   +content-body
   +clearfix
@@ -129,8 +135,9 @@ a
   padding: 0 0 30px 0
 
 .footer-item-title
-  font-size: 24px
-  line-height: 1.7em 
+  font-size: 20px
+  font-weight: bold
+  line-height: 1.7em
 
 .footer-item-subtitle
   line-height: 1.4em
@@ -142,12 +149,6 @@ a
 .footer-fb
   +float-right
   font-size: 14px
-
-.fb-image
-  position: relative 
-  left: -20px
-
-.fb-text
-  display: block
-  position: relative 
-  top: -16px
+  line-height: 16px
+  padding: 0 0 0 18px
+  background: url( "/images/facebook.gif" ) left top no-repeat
