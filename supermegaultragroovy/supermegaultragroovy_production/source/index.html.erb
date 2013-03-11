@@ -1,0 +1,51 @@
+<div class="wrap">
+  <div class="main">
+    <a href="#" class="app-for-iphone" title="appForIphone"></a>
+    <div class="header">
+      <div class="header-show">
+        <p class="header-show-system-requirement">
+          <%= lorem.words 15 %>
+          <a href="#" title="downloadCapo">download Capo 1.1</a>
+        </p>
+        <img src=<%= lorem.image( '503x271' ) %> alt="demoImg" class="header-show-image">
+      </div>
+      <div class="header-content">
+        <a href="#" title="CAPO" class="header-content-logo">
+          <h1>CAPO</h1>
+        </a>
+        <h2 class="header-content-title"><%= lorem.words 5 %></h2>
+        <p class="header-content-desc">
+          <%= lorem.words 40 %>
+          <a href="#" title="watch video" class="heade-content-watch-video">watch video</a>
+        </p>
+        <a href="#" title="download" class="header-content-download">download</a>
+        <a href="#" title="buy" class="header-content-buy">buy</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-nav">
+        <a title="features"
+        <a title="tutorials" href="#" class="content-nav-tutorials">Tutorials</a>
+      </div>
+      <div class="content-features">
+        <% for i in 1..8 %>
+        <div class="content-feature">
+          <img src="/images/feature-<%= i %>.png" alt="feature" class="feature-img">
+          <div class="feature-content">
+            <h3 class="feature-title"><%= lorem.words 3 %></h3>
+            <p class="feature-desc"><%= lorem.words 30 %></p>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="footer">
+      <a href="#" title="subtitle" class="footer-subtitle"><%= lorem.words 3 %></a>
+      <p class="footer-nav">
+       <a href="#" title="Facebook" class="nav-facebook">Facebook</a>
+       <a href="#" title="Blog" class="nav-blog">Blog</a>
+       <a href="#" title="Contact" class="nav-contact">Contact</a>
+     </p>
+   </div>
+ </div>
+</div>

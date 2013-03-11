@@ -1,0 +1,87 @@
+@import compass
+@import compass/reset
+
+$content-width: 976px
+
+*
+  color: #aab1b6
+
+.wrap
+
+.main
+  position: relative
+  margin: 0 auto
+  width: $content-width
+  background: url( "/images/page-bg.png" ) repeat-y
+
+.app-for-iphone
+  +hide-text
+  width: 139px
+  height: 137px
+  position: absolute
+  right: -2px
+  background: url( "/images/AlsoForMac.png" ) no-repeat
+
+.header
+  +clearfix
+  padding: 110px 25px 25px 25px
+  background: url( "/images/BackgroundTop.jpg" ) no-repeat top center
+
+.header-show
+  +float-right
+  width: 503px
+
+.header-show-system-requirement
+  +float-right
+  +border-radius( 5px )
+  width: 350px
+  background: url( "/images/note-bg.png" ) repeat-x
+  padding: 10px
+  font-size: 12px
+  line-height: 1.2em
+  word-spacing: 2px
+
+.header-show-image
+  padding: 10px 0 0 0
+  display: block
+
+.header-content
+  +clearfix
+  padding: 0 15px 0 0
+
+.header-content-logo
+  +hide-text
+  display: block
+  width: 194px
+  height: 71px
+  background: url( "/images/logo.png" ) no-repeat
+
+.header-content-title
+  font-size: 28px
+  font-weight: bold
+  line-height: 2em
+  color: #fff
+
+.header-content-desc
+  line-height: 1.2em
+  padding: 0 0 20px 0
+
+.heade-content-watch-video
+  +hide-text
+  +inline-block
+  width: 96px
+  background: url( "/images/watch.png" ) no-repeat
+
+.header-content-download
+  +hide-text
+  +float-left
+  width: 190px
+  height: 59px
+  background: url( "/images/download.png" ) no-repeat
+
+.header-content-buy
+  +hide-text
+  +float-left
+  width: 160px
+  height: 59px
+  background: url( "/images/buy.png" ) no-repeat
