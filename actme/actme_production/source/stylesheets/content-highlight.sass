@@ -1,60 +1,64 @@
+.content-highlight-wrap
+  background: url( "/images/shadow-slider-fw.png" ) no-repeat bottom
+  padding-bottom: 10px
+
 #content-highlight
   position: relative
-  height: 500px
   padding: 10px
   background: #fff
 
+.highlight-image
+  display: block
+
+.highlight-hidden
+  +hide-text
+  display: none
+
 .highlight-title
-  position: absolute 
-  color: #fff 
-  background: #000 
   +opacity(0.5)
-  padding: 10px 15px
-  line-height: 30px
-  top: 60px
-  font-family: $font-family 
-  font-size: 20px
+  position: absolute
+  top: 130px
+  padding: 0 15px
+  line-height: 50px
+  background: #000
+  font-size: 24px
+  color: #fff
 
 .highlight-slogan
-  position: absolute
-  padding: 5px 15px
   +opacity(0.5)
-  font-family: $font-family 
-  background: #fff 
-  line-height: 30px
-  top: 110px
+  position: absolute
+  top: 180px
+  padding: 0 15px
+  background: #fff
+  line-height: 40px
 
 .highlight-pager
   position: absolute
   bottom: 20px
   left: 20px
 
-.highlight-pager-next
-  display: inline-block
-  width: 15px
-  height: 15px
-  background: url( "/images/arrow-next2.png" ) no-repeat
-
 .highlight-pager-prev
-  display: inline-block
+  +float-left
   width: 15px
   height: 15px
   background: url( "/images/arrow-prev2.png" ) no-repeat
 
+.highlight-pager-next
+  +float-right
+  width: 15px
+  height: 15px
+  background: url( "/images/arrow-next2.png" ) no-repeat
+
 .highlight-slider
   position: absolute
-  bottom: 25px
-  left: 60px
-  background: #f6f6f5 
+  bottom: 22.5px
   width: 100px
+  left: 60px
+  background: #f6f6f5
 
 .highlight-pointer
-  position: relative 
+  position: relative
   left: 30px
-  background: #000 
+  background: #000
   width: 20px
   height: 10px
-
-.content-highlight-shadow
-  height: 30px
-  background: url( "/images/shadow-slider-fw.png" ) no-repeat 

@@ -110,4 +110,4 @@ PLATFORMS
 
 DEPENDENCIES
   middleman (~> 3.0.12)
-  middleman-livereload (~> 3.0.1)
+  middleman-livereload

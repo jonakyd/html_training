@@ -1,28 +1,26 @@
 <div id="content-blogs">
-  <div class="blogs-title">Blogs</div>
+  <h2 class="blogs-title">Blogs</h2>
   <div class="blogs">
-    <% for i in 0..4 %>
-    <div class="blogs-row">
-      <% for i in 0..3 %>
+    <div class="blog-articles">
+      <% for i in 0..11 %>
       <div class="blog-wrap">
         <div class="blog">
-          <img class="blog-image" src="<%= lorem.image('210x130', :random_color => true) %>" alt="">
+          <img class="blog-image" src="<%= lorem.image('210x130') %>" alt="">
           <p class="blog-title"><%= lorem.words 5 %></p>
           <p class="blog-content"><%= lorem.words 10 %></p>
         </div>
-        <div class="blog-shadow"></div>
       </div>
       <% end %>
-      <div class="clear"></div>
     </div>
-    <% end %>
     <div class="blog-nav-wrap">
       <div class="blog-nav">
-        <div class="blog-nav-pager">1&nbsp;2&nbsp;>></div>
+        <div class="blog-nav-pager">
+          <a class="blog-nav-pager-selected" href="#" title="toPage1">1</a>
+          <a href="#" title="toPage2">2</a>
+          <a href="#" title="toNextPage">>></a>
+        </div>
         <div class="blog-nav-hint">Page 1 of 2</div>
-        <div class="clear"></div>
       </div>
-      <div class="blog-nav-shadow"></div>
     </div>
   </div>
 </div>

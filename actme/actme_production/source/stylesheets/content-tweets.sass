@@ -1,30 +1,26 @@
 #content-tweets
   +float-right
-  width: ( $content-width / 2 ) - 10
-  height: 200px
-  padding: 0 0 0 10px
+  width: 50%
+  height: 64px
+  position: relative
 
 .tweets-title
-  +float-left
+  position: absolute
   +hide-text
   background: url( "/images/tweets.png" ) no-repeat
   width: 15px
-  height: 64px 
+  height: 64px
 
 .tweets-wrap
-  +float-left
-  width: ( $content-width / 2 ) - 25
-  height: 100%
+  padding: 0 0 10px 0
+  margin: 0 0 0 15px
+  background: url( "/images/personal-twitter-shadow.png" ) no-repeat bottom
   .tweets
     background: #ededea
-    height: 100%
-    padding: 15px
+    height: 210px
+    padding: 10px
     .tweet-wrap
       padding: 0 0 10px 0
       .tweet
         padding: 13px 5px
-        background: #fff 
-  .tweets-shadow
-    width: 100% 
-    height: 10px
-    background: url( "/images/personal-twitter-shadow.png" ) no-repeat 
+        background: #fff

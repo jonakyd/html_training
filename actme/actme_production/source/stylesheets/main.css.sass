@@ -3,14 +3,18 @@
 
 $content-width: 960px
 $header-height: 46px
-$font-family: "Gill Sans"
+$font-family: "Monaco5", "Helvetica", "Palatino", "Gill Sans"
 
-#wrapper
-  width: 100%
+#wrap
   min-width: $content-width
 
-.clear
-  clear: both
+*
+  color: #585b5a
+
+a
+  text-decoration: none
+  &:hover
+    text-decoration: underline
 
 @import "header"
 @import "footer"

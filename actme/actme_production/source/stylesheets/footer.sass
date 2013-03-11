@@ -1,50 +1,42 @@
-#footer
+@mixin footer-sns
+  +hide-text
+  +inline-block
+  width: 16px
+  height: 16px
+
+.footer-wrap
+  background: url( "/images/bg-footer-top.png" ) no-repeat top center
   height: 50px
   line-height: 50px
   font-size: 12px
+  // width: 1200px
 
-.footer-shadow
-  background: url( "/images/bg-footer-top.png" ) no-repeat
-  width: 1200px
-  height: 15px
-  margin: 0 auto
-
-.footer-inner-wrap
+#footer
   width: $content-width
   margin: 0 auto
-
-.list-item
-  +inline-block
+  +clearfix
 
 .footer-sns
   +float-left
   padding: 0 30px
 
 .footer-rss
-  +hide-text
-  +inline-block
-  width: 16px
-  height: 16px
+  +footer-sns
   background: url( "/images/rss.png" ) no-repeat
 
 .footer-twitter
-  +hide-text
-  +inline-block
-  width: 16px
-  height: 16px
+  +footer-sns
   background: url( "/images/twitter.png" ) no-repeat
 
 .footer-facebook
-  +hide-text
-  +inline-block
-  width: 16px
-  height: 16px
+  +footer-sns
   background: url( "/images/facebook.png" ) no-repeat
 
 .footer-nav
   +float-left
-  .list-item
-    padding: 0 10px
 
-.footer-copywrite
+.nav-item
+  padding: 0 5px
+
+.footer-copyright
   +float-right

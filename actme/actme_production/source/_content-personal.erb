@@ -1,25 +1,28 @@
 <div id="content-personal">
-  <div class="personal-title">Personal</div>
-  <div class="personal-info-wrap">
-    <img class="personal-info-image" src="/images/alina.jpeg" alt="">
-    <div class="personal-info">
-      <div class="personal-quote">
-        <div class="img"></div>
-        <div class="seperator"></div>
-        <div class="desc"><%= lorem.words 10 %></div>
-      </div>
-      <div class="personal-quote">
-        <div class="img"></div>
-        <div class="seperator"></div>
-        <div class="desc"><%= lorem.words 10 %></div>
-      </div>
-      <div class="personal-quote">
-        <div class="img"></div>
-        <div class="seperator"></div>
-        <div class="desc"><%= lorem.words 10 %></div>
+  <h2 class="personal-title">Personal</h2>
+  <div class="personal-main-wrap">
+    <div class="personal-main">
+      <img class="personal-info-image" src=<%= lorem.image('230x230') %> alt="Profolio image">
+      <div class="personal-info">
+        <div class="personal-block-quote">
+          <p class="personal-desc"><%= lorem.words 10 %></p>
+        </div>
+        <div class="personal-block-link">
+          <p class="personal-desc"><%= lorem.words 4 %></p>
+        </div>
+        <div class="personal-block-sns">
+          <p class="personal-desc">
+            <a class="desc-fb" href="#" title="facebook">fb</a>
+            <a class="desc-twitter" href="#" title="twitter">twitter</a>
+            <a class="desc-web" href="#" title="web">web</a>
+            <a class="desc-flickr" href="#" title="flickr">flickr</a>
+            <a class="desc-deviantart" href="#" title="deviantart">deviantart</a>
+            <a class="desc-behance" href="#" title="behance">behance</a>
+            <a class="desc-vimeo" href="#" title="vimeo">vimeo</a>
+            <a class="desc-xing" href="#" title="xing">xing</a>
+          </p>
+        </div>
       </div>
     </div>
-    <div class="clear"></div>
-    <div class="personal-info-shadow"></div>
   </div>
 </div>

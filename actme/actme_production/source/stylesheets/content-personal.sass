@@ -1,50 +1,87 @@
+@mixin personal-block
+  padding: 10px 10px 10px 25px
+
+@mixin desc-sns
+  +hide-text
+  +inline-block
+  width: 16px
+  height: 16px
+
 #content-personal
   +float-left
-  width: ( $content-width / 2 ) - 10
-  height: 240px
-  padding: 0 0 10px 0
+  position: relative
+  width: 50%
 
 .personal-title
-  +float-left
   +hide-text
+  position: absolute
   width: 15px
-  height: 64px 
+  height: 64px
   background: url( "/images/personal.png" ) no-repeat
 
-.personal-info-wrap
-  +float-left
-  height: 230px
-  width: ( $content-width / 2 ) - 25
+.personal-main-wrap
+  +clearfix
+  margin: 0 0 0 15px // is there any better solution?
+  padding: 0 0 10px 0
+  background: url( "/images/personal-content-shadow.png" ) no-repeat bottom
 
-.personal-info-shadow
-  width: 100% 
-  height: 10px
-  background: url( "/images/personal-content-shadow.png" ) no-repeat 
+.personal-main
+  +clearfix
+  background: #fff
+  height: 230px
 
 .personal-info-image
   +float-left
-  width: 50%
-  height: 100%
+  width: 230px
 
 .personal-info
-  +float-right
-  background: #fff 
-  height: 100%
-  width: 50% 
+  +clearfix
+  padding: 25px 0
 
-.personal-quote
-  height: 66px
-  padding: 5px 10px
-  .img
-    +inline-block
-    background: url( "/images/entry-quote.png" ) no-repeat
-    width: 16px
-    height: 12px
-  .seperator
-    +inline-block
-    width: 2px
-    height: 100% 
-    background: #d2d6db
-  .desc
-    +inline-block
-    width: 170px
+.personal-block-quote
+  +personal-block
+  background: url( "/images/entry-quote.png" ) no-repeat 5px center
+
+.personal-block-link
+  +personal-block
+  background: url( "/images/entry-link.png" ) no-repeat 5px center
+
+.personal-block-sns
+  +personal-block
+  background: url( "/images/entry-users.png" ) no-repeat 5px center
+
+.personal-desc
+  padding: 5px
+  border-left: 2px solid #d2d6db
+
+.desc-fb
+  +desc-sns
+  background: url( "/images/facebook.png" ) no-repeat
+
+.desc-twitter
+  +desc-sns
+  background: url( "/images/twitter.png" ) no-repeat
+
+.desc-web
+  +desc-sns
+  background: url( "/images/dribbble.png" ) no-repeat
+
+.desc-flickr
+  +desc-sns
+  background: url( "/images/flickr.png" ) no-repeat
+
+.desc-deviantart
+  +desc-sns
+  background: url( "/images/deviantart.png" ) no-repeat
+
+.desc-behance
+  +desc-sns
+  background: url( "/images/behance.png" ) no-repeat
+
+.desc-vimeo
+  +desc-sns
+  background: url( "/images/vimeo.png" ) no-repeat
+
+.desc-xing
+  +desc-sns
+  background: url( "/images/xing.png" ) no-repeat
