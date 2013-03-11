@@ -2,7 +2,7 @@
 @import compass/reset
 
 $content-width: 900px
-$left-right-edge: 20px
+$left-right-edge: 22px
 
 @mixin content-body
   width: $content-width
@@ -10,6 +10,9 @@ $left-right-edge: 20px
 
 a
   text-decoration: none
+
+body
+  background: #05124e
 
 .wrap
   min-width: $content-width
@@ -88,6 +91,7 @@ a
 .content-highlight
   position: relative
   padding: 0 $left-right-edge
+  height: 330px
 
 .content-highlight-main
   +clearfix
@@ -95,14 +99,39 @@ a
 
 .content-highlight-steps-wrap
   position: absolute
-  width: 100%
+  bottom: 35px
+  width: $content-width - ( $left-right-edge * 2 )
   height: 44px
   background: #04093d
 
 .content-highlight-steps
-  // position: absolute
-  // top: -7px
-  // height: 58px
+  position: absolute
+  bottom: -7px
+  width: 100%
+  height: 58px
+  padding: 0 20px
+
+@mixin hightlight-step
+  +inline-block
+  padding: 0 20px 0 58px
+  line-height: 58px
+  color: #00a5ee
+  font-size: 22px
+  font-weight: bold
+  &:hover
+    color: #fff
+    background-position: left 100%
+
+.step-design
+  +hightlight-step
+  background: url( "/images/one.png" ) no-repeat
+.step-website
+  +hightlight-step
+  background: url( "/images/two.png" ) no-repeat
+.step-results
+  +hightlight-step
+  background: url( "/images/three.png" ) no-repeat
+
 
 .main-text
   +clearfix
@@ -115,8 +144,9 @@ a
 .main-text-title
   color: #fff
   font-size: 34px
-  line-height: 1.4em
+  line-height: 1.2em
   font-weight: bold
+  padding: 0 0 10px 0
 
 .main-text-explain
   color: #95e3f9
@@ -127,5 +157,79 @@ a
   color: #33bced
   font-weight: bold
 
+.content-explain-wrap
+  padding: 48px ( $left-right-edge + 26px )
+
+.content-explain
+  +clearfix
+  width: 105%
+
+.explain-item
+  float: left
+  padding: 0 3.33% 0 0
+  width: 30%
+
+@mixin explain-title
+  height: 53px
+  font-size: 26px
+  color: #fff
+  padding: 0 0 0 56px
+  +ellipsis( false )
+
+.explain-title-build
+  +explain-title
+  background: url( "/images/icon-build.jpeg" ) no-repeat
+
+.explain-title-publish
+  +explain-title
+  background: url( "/images/icon-publish.jpeg" ) no-repeat
+.explain-title-unique
+  +explain-title
+  background: url( "/images/icon-unique.jpeg" ) no-repeat
+
+.explain-desc
+  padding: 10px 0
+  color: #00a5ee
+  font-size: 14px
+  line-height: 1.2em
+
+.explain-more
+  color: #30bde5
+  font-weight: bold
+
+.watch-demo
+  +hide-text
+  display: block
+  width: 216px
+  height: 39px
+  background: url( "/images/video-demo.png" ) no-repeat
+  &:hover
+    background-position: 0 100%
+
+.light-cms
+  +hide-text
+  +float-right
+  width: 125px
+  height: 40px
+  background: url( "/images/lightcms-logo.png" ) no-repeat
+
+.footer-wrap
+  background: #05124e
+
 .footer
   +content-body
+  text-align: center
+  padding: 20px 50px
+  color: #003d77
+  line-height: 1.4em
+  font-size: 14px
+
+.footer-nav
+  word-spacing: 12px
+
+.footer-nav-link
+  color: #004f88
+  font-weight: bold
+  font-size: 18px
+  &:hover
+    text-decoration: underline
