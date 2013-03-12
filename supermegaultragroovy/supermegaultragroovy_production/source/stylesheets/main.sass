@@ -7,6 +7,11 @@ $content-width: 976px
   color: #aab1b6
 
 .wrap
+  background: url( "/images/body-bg.png" )
+
+.underlined
+  text-decoration: none
+  border-bottom: 1px solid #aab1b6
 
 .main
   position: relative
@@ -46,7 +51,6 @@ $content-width: 976px
   display: block
 
 .header-content
-  +clearfix
   padding: 0 15px 0 0
 
 .header-content-logo
@@ -59,7 +63,8 @@ $content-width: 976px
 .header-content-title
   font-size: 28px
   font-weight: bold
-  line-height: 2em
+  line-height: 1.2em
+  padding: 10px 0
   color: #fff
 
 .header-content-desc
@@ -74,14 +79,82 @@ $content-width: 976px
 
 .header-content-download
   +hide-text
-  +float-left
+  +inline-block
   width: 190px
   height: 59px
   background: url( "/images/download.png" ) no-repeat
 
 .header-content-buy
   +hide-text
-  +float-left
+  +inline-block
   width: 160px
   height: 59px
   background: url( "/images/buy.png" ) no-repeat
+
+.content
+  padding: 20px
+
+.content-nav-wrap
+  +clearfix
+
+.content-nav
+  +float-left
+  width: 200px
+  text-align: center
+
+.content-nav-ribbon
+  +float-left
+  width: 368px
+  height: 27px
+  background: url( "/images/border.png" ) repeat-x center center
+
+.content-nav-item
+  font-size: 22px
+  font-weight: bold
+  color: #505d68
+  text-decoration: none
+  &:hover
+    color: #fff
+    border-bottom: 2px solid #aab1b6
+  &.selected
+    color: #fff
+    border-bottom: 2px solid #aab1b6
+
+.content-features
+  +clearfix
+  background: url( "/images/border.png" ) repeat-x center bottom
+  padding: 30px 0
+
+
+.content-feature
+  +float-left
+  width: 338px
+  padding: 20px 20px 20px 100px
+  background: url( "http://placehold.it/60x60" ) no-repeat left 30px center
+
+.feature-title
+  font-weight: bold
+  line-height: 24px
+
+.feature-desc
+  font-size: 14px
+
+.footer
+  padding: 40px 0
+
+.footer-subtitle
+  +border-radius( 15px )
+  +hide-text
+  display: block
+  width: 180px
+  height: 51px
+  margin: 0 auto
+  background: url( "/images/sublogo.png" ) no-repeat
+
+.footer-nav
+  width: 400px
+  margin: 0 auto
+  padding: 10px 0
+  text-align: center
+
+

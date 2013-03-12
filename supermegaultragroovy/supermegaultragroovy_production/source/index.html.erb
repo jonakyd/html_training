@@ -23,18 +23,22 @@
       </div>
     </div>
     <div class="content">
-      <div class="content-nav">
-        <a title="features"
-        <a title="tutorials" href="#" class="content-nav-tutorials">Tutorials</a>
+      <div class="content-nav-wrap">
+        <div class="content-nav-ribbon">
+        </div>
+        <div class="content-nav">
+          <a title="features" href="#" class="content-nav-item selected">Features</a>
+          &nbsp;
+          <a title="tutorials" href="#" class="content-nav-item">Tutorials</a>
+        </div>
+        <div class="content-nav-ribbon">
+        </div>
       </div>
       <div class="content-features">
         <% for i in 1..8 %>
         <div class="content-feature">
-          <img src="/images/feature-<%= i %>.png" alt="feature" class="feature-img">
-          <div class="feature-content">
-            <h3 class="feature-title"><%= lorem.words 3 %></h3>
-            <p class="feature-desc"><%= lorem.words 30 %></p>
-          </div>
+          <h3 class="feature-title"><%= lorem.words 3 %></h3>
+          <p class="feature-desc"><%= lorem.words 20 %></p>
         </div>
         <% end %>
       </div>
@@ -42,9 +46,11 @@
     <div class="footer">
       <a href="#" title="subtitle" class="footer-subtitle"><%= lorem.words 3 %></a>
       <p class="footer-nav">
-       <a href="#" title="Facebook" class="nav-facebook">Facebook</a>
-       <a href="#" title="Blog" class="nav-blog">Blog</a>
-       <a href="#" title="Contact" class="nav-contact">Contact</a>
+        <a href="#" title="Facebook" class="underlined">Facebook</a>
+       &nbsp;•&nbsp;
+       <a href="#" title="Blog" class="underlined">Blog</a>
+       &nbsp;•&nbsp;
+       <a href="#" title="Contact" class="underlined">Contact</a>
      </p>
    </div>
  </div>
