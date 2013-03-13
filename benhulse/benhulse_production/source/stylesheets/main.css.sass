@@ -2,9 +2,7 @@
 @import compass/reset
 
 $content-width: 900px
-
-*
-  color: #555
+$font-color: #555
 
 .selected
   text-decoration: none
@@ -22,7 +20,7 @@ $content-width: 900px
   +hide-text
   width: 30px
   height: 77px
-  background: url( "/images/logo.jpg" ) no-repeat
+  background: image-url( "logo.jpg" ) no-repeat
 
 .header-logo-link
   display: block
@@ -32,21 +30,21 @@ $content-width: 900px
   height: 2px
   background: #ccc
 
-.header-nav
+.content-nav
   +clearfix
 
-.header-item
+.nav-item
   +float-left
   padding: 10px 15px 30px 0
 
-.header-link:hover
-  text-decoration: none
-
-.content-wrap
+.nav-link
+  color: $font-color
+  &:hover
+    text-decoration: none
 
 #content
-  width: $content-width + 20px
   +clearfix
+  width: $content-width + 20px
 
 .item-wrap
   +float-left
@@ -56,6 +54,7 @@ $content-width: 900px
 .item
   padding: 0 20px 20px 0
   text-align: center
+  color: $font-color
 
 .item-image
   display: block
