@@ -1,13 +1,13 @@
 <div id="wrap">
   <div id="header">
     <div class="header-logo-wrap">
-      <a class="header-logo" href="/images/logo.jpg">
-        <h1>Benhulse</h1>
-      </a>
+      <h1 class="header-logo">
+        <a class="header-logo-link" href="#" title="Benhulse">Benhulse</a>
+      </h1>
     </div>
     <ol class="header-nav">
       <li class="header-item">
-        <a href="" class="header-link">Design</a>
+        <a href="" class="header-link selected">Design</a>
       </li>
       <li class="header-item">
         <a href="" class="header-link">Photography</a>
@@ -20,19 +20,17 @@
       </li>
     </ol>
   </div>
-  <div id="content">
-    <% for i in 0..3 %>
-    <div class="content-row">
-      <% for i in 0..3 %>
+  <div class="content-wrap">
+    <div id="content">
+      <% for i in 0..11 %>
       <div class="item-wrap">
         <div class="item">
-          <img class="item-image" src=<%= lorem.image('200x134') %> alt="">
+          <img class="item-image" src=<%= lorem.image('210x134') %> alt="image">
           <div class="item-title"><%= lorem.words 3 %></div>
           <div class="item-desc"><%= lorem.words 3 %></div>
         </div>
       </div>
       <% end %>
     </div>
-    <% end %>
   </div>
 </div>
