@@ -2,19 +2,15 @@
   <a href="#" title="payment" class="payment">new integrate payment</a>
   <div class="header-wrap">
     <div class="header">
-      <p class="header-hint">
-        <%= lorem.words 3 %>
-        <a href="#" class="header-hint-more" title="auth">Sign in</a>
-        <%= lorem.words 3 %>
-      </p>
+      <p class="header-hint"><%= lorem.words 3 %> <a href="#" class="header-hint-more" title="auth">Sign in</a> <%= lorem.words 3 %></p>
     </div>
   </div>
   <div class="content-wrap">
     <div class="content">
       <div class="content-nav">
-        <a href="#" class="content-nav-logo" title="logo">
-          <h1>Icebrrg</h1>
-        </a>
+        <h1 class="content-nav-logo">
+          <a href="#" class="content-nav-logo-link" title="logo">Icebrrg</a>
+        </h1>
         <ol class="content-nav-list">
           <li class="nav-what">
             <a href="#" title="what" class="nav-link">What it Does</a>
@@ -32,9 +28,7 @@
           <img class="main-img" src=<%= lorem.image('410x270') %> alt="IcebrrgDescription">
           <div class="main-text">
             <h1 class="main-text-title"><%= lorem.words 5 %></h1>
-            <h2 class="main-text-explain"><%= lorem.words 30 %>
-              <a href="#" class="main-text-more" title="more"><%= lorem.words 4 %> >></a>
-            </h2>
+            <h2 class="main-text-explain"><%= lorem.words 30 %> <a href="#" class="main-text-more" title="more"><%= lorem.words 4 %> >></a></h2>
           </div>
         </div>
         <div class="content-highlight-steps-wrap">
@@ -49,22 +43,16 @@
         <div class="content-explain">
           <div class="explain-item">
             <h2 class="explain-title-build"><%= lorem.words 6 %></h2>
-            <p class="explain-desc"><%= lorem.words 40 %>
-              <a href="#" title="show more" class="explain-more">See how >></a>
-            </p>
+            <p class="explain-desc"><%= lorem.words 40 %> <a href="#" title="show more" class="explain-more">See how >></a></p>
             <a href="#" class="watch-demo" title="demo"><%= lorem.words 4 %></a>
           </div>
           <div class="explain-item">
             <h2 class="explain-title-publish"><%= lorem.words 6 %></h2>
-            <p class="explain-desc"><%= lorem.words 40 %>
-              <a href="#" title="show more" class="explain-more">See how >></a>
-            </p>
+            <p class="explain-desc"><%= lorem.words 40 %> <a href="#" title="show more" class="explain-more">See how >></a></p>
           </div>
           <div class="explain-item">
             <h2 class="explain-title-unique"><%= lorem.words 6 %></h2>
-            <p class="explain-desc"><%= lorem.words 40 %>
-              <a href="#" title="show more" class="explain-more">See how >></a>
-            </p>
+            <p class="explain-desc"><%= lorem.words 40 %> <a href="#" title="show more" class="explain-more">See how >></a></p>
             <a href="#" class="light-cms" title="cms"><%= lorem.words 4 %></a>
           </div>
         </div>
@@ -73,11 +61,11 @@
   </div>
   <div class="footer-wrap">
     <div class="footer">
-      <div class="footer-nav">
+      <p class="footer-nav">
         <% for i in 0..6 %>
         <a href="#" class="footer-nav-link" title="link"><%= lorem.words 1 %></a>
         <% end %>
-      </div>
+      </p>
       <p class="footer-desc"><%= lorem.words 20 %></p>
       <p class="footer-copyright"><%= lorem.words 10 %></p>
     </div>

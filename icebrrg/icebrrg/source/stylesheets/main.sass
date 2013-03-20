@@ -8,8 +8,8 @@ $left-right-edge: 22px
   width: $content-width
   margin: 0 auto
 
-a
-  text-decoration: none
+// a
+//   text-decoration: none
 
 body
   background: #05124e
@@ -20,8 +20,8 @@ body
 .payment
   +hide-text
   display: block
+  z-index: 10
   position: fixed
-  top: 0
   right: 0
   width: 160px
   height: 130px
@@ -43,6 +43,7 @@ body
 
 .header-hint-more
   color: #fff
+  text-decoration: none
 
 .content-wrap
   background: #03266a url( "/images/header-bg-home.jpeg" ) top center no-repeat
@@ -55,13 +56,16 @@ body
   height: 150px
 
 .content-nav-logo
-  +hide-text
   position: absolute
   bottom: 0
   left: 8px
   width: 322px
   height: 126px
   background: url( "/images/logo.png" ) no-repeat
+
+.content-nav-logo-link
+  +hide-text
+  display: block
 
 .content-nav-list
   position: absolute
@@ -78,6 +82,7 @@ body
   color: #fff
   font-weight: bold
   font-size: 18px
+  text-decoration: none
   line-height: 33px
 
 .nav-what
@@ -128,6 +133,7 @@ body
   color: #00a5ee
   font-size: 22px
   font-weight: bold
+  text-decoration: none
   &:hover
     color: #fff
     background-position: left 100%
@@ -165,6 +171,7 @@ body
 
 .main-text-more
   color: #33bced
+  text-decoration: none
   font-weight: bold
 
 .content-explain-wrap
@@ -205,6 +212,7 @@ body
 
 .explain-more
   color: #30bde5
+  text-decoration: none
   font-weight: bold
 
 .watch-demo
@@ -235,11 +243,13 @@ body
   font-size: 14px
 
 .footer-nav
+  font-size: 10px
   word-spacing: 12px
 
 .footer-nav-link
   color: #004f88
   font-weight: bold
   font-size: 18px
+  text-decoration: none
   &:hover
     text-decoration: underline
