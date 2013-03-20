@@ -1,55 +1,54 @@
-<div id="wrapper">
+<div id="wrap">
   <div class="header-wrap">
     <div class="header">
-      <a href="#" class="header-logo" title="logo">
-        <h1>Guzzle</h1>
-      </a>
-      <div class="header-hint"><%= lorem.words 3 %>
-        <a href="#" title="login">Login</a>
-        <a href="#" title="createAccount">Create</a>
-      </div>
-    </div>
+      <h1 class="header-logo">
+        <a href="#" class="header-logo-link" title="logo">Guzzle</a>
+      </h1>
+      <p class="header-hint"><%= lorem.words 3 %> <a href="#" class="link" title="login">Login</a> <a href="#" class="link" title="createAccount">Create</a>
+    </p>
   </div>
   <div class="content-wrap">
     <div class="content">
       <div class="content-highlight">
         <a href="#" class="content-control" title="customizeControl">CustomizeMyPage</a>
-        <h2 class="content-title">Wellcome.</h2>
-        <h3 class="content-subtitle"><%= lorem.words 15 %></h3>
-        <h4 class="content-desc"><%= lorem.words 10 %></h4>
-        <div class="content-hint">Don't show thsi message again</div>
+        <h3 class="content-title">Wellcome.</h3>
+        <h2 class="content-subtitle"><%= lorem.words 30 %></h2>
+        <h4 class="content-desc"><%= lorem.words 5 %> <a href="#" title="hello" class="link">Hello</a> <%= lorem.words 2 %> <a href="#" title="hello" class="link">Hello</a> <%= lorem.words 3 %></h4>
+        <a href="#" title="dismiss" class="content-hint">Don't show this message again</a>
       </div>
       <div class="content-feeds">
         <div class="feed">
           <div class="feed-title">
             <h2 class="feed-title-text">Headings</h2>
-            <a href="#" title="feedNav" class="feed-title-nav"></a>
+            <a href="#" title="feedNav" class="feed-title-nav">nav</a>
           </div>
           <% for i in 0..6 %>
-          <div class="feed-item"><%= lorem.words 8 %></div>
+          <a href="#" title="feed" class="feed-item"><%= lorem.words 8 %></a>
           <% end %>
-          <div class="feed-item feed-item-last"><%= lorem.words 8 %></div>
+          <a href="#" title="feed" class="feed-item feed-item-last"><%= lorem.words 8 %></a>
         </div>
         <div class="feed">
           <div class="feed-title">
             <h2 class="feed-title-text">Popular</h2>
-            <a href="#" title="feedNav" class="feed-title-nav"></a>
+            <a href="#" title="feedNav" class="feed-title-nav">nav</a>
           </div>
           <% for i in 0..6 %>
-          <div class="feed-item"><%= lorem.words 8 %></div>
+          <a href="#" title="feed" class="feed-item"><%= lorem.words 8 %></a>
           <% end %>
-          <div class="feed-item feed-item-last"><%= lorem.words 8 %></div>
+          <a href="#" title="feed" class="feed-item feed-item-last"><%= lorem.words 8 %></a>
         </div>
         <div class="feed">
           <div class="feed-title">
             <h2 class="feed-title-text">Lastest Images</h2>
-            <a href="#" title="feedNav" class="feed-title-nav"></a>
+            <a href="#" title="feedNav" class="feed-title-nav">nav</a>
           </div>
           <div class="feed-images">
             <% for i in 0..15 %>
-            <a href="#" class="feed-image-wrap" title="image">
-              <img src=<%= lorem.image('69x69') %> alt="" class="feed-image">
-            </a>
+            <div class="feed-image-wrap">
+              <a href="#" class="feed-image-link" title="image">
+                <img src=<%= lorem.image('69x69') %> alt="" class="feed-image">
+              </a>
+            </div>
             <% end %>
           </div>
         </div>
@@ -60,17 +59,14 @@
     <div class="footer">
       <% for i in 0..2 %>
       <div class="footer-items">
-        <div class="footer-item-title"><%= lorem.words 3 %></div>
+        <h2 class="footer-item-title"><%= lorem.words 3 %></h2>
         <% for i in 0..3 %>
-        <div class="footer-item-subtitle"><%= lorem.words 2 %></div>
+        <div class="footer-item-subtitle-wrap"><a href="#" title="link" class="footer-item-subtitle"><%= lorem.words 2 %></a></div>
         <% end %>
       </div>
       <% end %>
-      <div class="footer-copyright"><%= lorem.words 3 %>
-        <a href="#">Copyright</a><%= lorem.words 3 %>
-      </div>
-      <a href="#" title="facebook" class="footer-fb">Join us on Facebook
-      </a>
+      <p class="footer-copyright"><%= lorem.words 3 %> <a href="#" class="link" title="copyright">Copyright</a> <%= lorem.words 3 %></p>
+      <a href="#" title="facebook" class="footer-fb">Join us on Facebook</a>
     </div>
   </div>
 </div>

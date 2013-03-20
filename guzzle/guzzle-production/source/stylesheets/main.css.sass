@@ -3,9 +3,14 @@
 
 $content-width: 940px
 
-a
-  text-decoration: none
+html
+  font-size: 14px
+
+@mixin link-reset
   color: #018acf
+  text-decoration: none
+  &:hover
+    text-decoration: underline
 
 @mixin content-body
   width: $content-width
@@ -15,26 +20,34 @@ a
   width: 100%
   min-width: $content-width
 
+.link
+  +link-reset
+
 .header-wrap
   +content-body-wrap
   border-bottom: 1px solid #dadada
 
 .header
   +content-body
+  position: relative
   padding: 20px 0 0 0
-  +clearfix
+  height: 98px
 
 .header-logo
-  +float-left
-  +hide-text
+  position: absolute
   width: 148px
   height: 98px
   background: url( "/images/logo.png" ) no-repeat
 
+.header-logo-link
+  +hide-text
+  display: block
+  height: 100%
+
 .header-hint
-  +float-right
-  line-height: 98px
-  font-size: 12px
+  position: absolute
+  top: 50px
+  right: 0
 
 .content-wrap
   +content-body-wrap
@@ -44,34 +57,35 @@ a
 .content
   +content-body
 
+.content-highlight
+  position: relative
+  padding: 0 0 30px 0
+  background: url( "/images/welcome-master.png" ) repeat-x bottom
+
 .content-control
   +hide-text
   display: block
   width: 159px
   height: 26px
   background: url( "/images/custom-page.png" ) no-repeat
-  padding: 0 0 20px 0
 
 .content-title
-  font-size: 52px
+  font-size: 3em
   font-weight: bold
-  line-height: 1.3em
+  padding: 20px 0 15px 0
 
 .content-subtitle
-  font-size: 42px
+  font-size: 2em
 
 .content-desc
-  font-size: 22px
-  line-height: 3em
+  font-size: 1.6em
+  padding: 20px 0
 
 .content-hint
-  text-align: right
-  font-size: 12px
-  line-height: 1.8em
-
-.content-highlight
-  padding: 0 0 10px 0
-  background: url( "/images/welcome-master.png" ) repeat-x bottom
+  +link-reset
+  position: absolute
+  right: 0
+  color: #000
 
 .content-feeds
   +clearfix
@@ -94,15 +108,20 @@ a
 
 .feed-title-nav
   +float-right
+  +hide-text
   background: url( "/images/main-title-bg.png" ) no-repeat
   width: 22px
   height: 16px
 
 .feed-item
-  line-height: 1.5em
+  +link-reset
+  color: #000
+  display: block
+  padding: 5px 0
   border-bottom: 1px solid #dadada
-  font-size: 14px
   word-spacing: 2px
+  &:hover
+    text-decoration: none
 
 .feed-item-last
   border-bottom: 0px
@@ -110,12 +129,14 @@ a
 .feed-images
   +clearfix
   padding: 5px 0
-  width: 103%
+  width: 310px
 
 .feed-image-wrap
   +float-left
+  padding: 0 8px 8px 0
+
+.feed-image-link
   display: block
-  padding: 0 2.6% 2.6% 0
 
 .feed-image
   display: block
@@ -126,6 +147,7 @@ a
 .footer
   +content-body
   +clearfix
+  position: relative
   padding: 20px 0
 
 .footer-items
@@ -134,20 +156,29 @@ a
   padding: 0 0 30px 0
 
 .footer-item-title
-  font-size: 20px
+  font-size: 1.2em
   font-weight: bold
-  line-height: 1.7em
+  padding: 5px 0
+
+.footer-item-subtitle-wrap
+  padding: 3px 0
 
 .footer-item-subtitle
-  line-height: 1.4em
+  +link-reset
+  color: #000
 
 .footer-copyright
-  +float-left
-  font-size: 14px
+  position: absolute
+  left: 0
+  bottom: 0
+  font-size: 0.8em
+  padding: 15px 0
 
 .footer-fb
-  +float-right
-  font-size: 14px
-  line-height: 16px
-  padding: 0 0 0 18px
-  background: url( "/images/facebook.gif" ) left top no-repeat
+  +link-reset
+  position: absolute
+  right: 0
+  bottom: 0
+  font-size: 0.8em
+  padding: 15px 0 15px 18px
+  background: url( "/images/facebook.gif" ) left center no-repeat
